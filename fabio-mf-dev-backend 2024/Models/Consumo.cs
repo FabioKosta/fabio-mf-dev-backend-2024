@@ -12,7 +12,7 @@ namespace fabio_mf_dev_backend_2024.Models
 
         [Required(ErrorMessage ="Obrigatório informar a Descrição")]
 
-        [Display(Nome="Descrição")]
+        [Display(Name="Descrição")]
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a Data")]
@@ -24,10 +24,10 @@ namespace fabio_mf_dev_backend_2024.Models
         [Required(ErrorMessage = "Obrigatório informar a Quilometragem")]
         public int Km { get; set; }
 
-        [Display(Nome = "Tipo de Combustível")]
+        [Display(Name = "Tipo de Combustível")]
         public TipoCombustivel Tipo { get; set; }
 
-        [Display(Nome = "Veículo")]
+        [Display(Name = "Veículo")]
 
         [Required(ErrorMessage = "Obrigatório informar a Veículo")]
         public int VeiculoId { get; set; }
@@ -38,8 +38,9 @@ namespace fabio_mf_dev_backend_2024.Models
     }
 
     public enum TipoCombustivel
+    {
         Gasolina,
-        Etanol,
+        Etanol
+    }
 }
-
-in  
+    
