@@ -24,3 +24,4 @@ namespace fabio_mf_dev_backend_2024.Models
         public ICollection<Consumo> Consumos { get; set; } 
     }
 }
+    

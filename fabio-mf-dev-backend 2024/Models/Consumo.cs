@@ -4,19 +4,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace fabio_mf_dev_backend_2024.Models
 {
-    [Table("Consumo")]
+    [Table("Consumos")]
     public class Consumo
     {
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage ="Obrigatório informar a Descrição")]
+        [Required(ErrorMessage = "Obrigatório informar a Descrição")]
 
-        [Display(Name="Descrição")]
+        [Display(Name = "Descrição")]
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a Data")]
-        public DateTime Data  { get; set; }
+        public DateTime Data { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o Valor")]
         public decimal Valor { get; set; }
@@ -29,7 +29,7 @@ namespace fabio_mf_dev_backend_2024.Models
 
         [Display(Name = "Veículo")]
 
-        [Required(ErrorMessage = "Obrigatório informar a Veículo")]
+        [Required(ErrorMessage = "Obrigatório informar o Veículo!")]
         public int VeiculoId { get; set; }
 
         [ForeignKey("VeiculoId")]

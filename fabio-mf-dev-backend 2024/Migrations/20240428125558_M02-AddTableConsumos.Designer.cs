@@ -12,7 +12,7 @@ using fabio_mf_dev_backend_2024.Models;
 namespace fabio_mf_dev_backend_2024.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240424004838_M02-AddTableConsumos")]
+    [Migration("20240428125558_M02-AddTableConsumos")]
     partial class M02AddTableConsumos
     {
         /// <inheritdoc />
@@ -56,7 +56,7 @@ namespace fabio_mf_dev_backend_2024.Migrations
 
                     b.HasIndex("VeiculoId");
 
-                    b.ToTable("Consumo");
+                    b.ToTable("Consumos");
                 });
 
             modelBuilder.Entity("fabio_mf_dev_backend_2024.Models.Veiculo", b =>

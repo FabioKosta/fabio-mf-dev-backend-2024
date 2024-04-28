@@ -53,7 +53,7 @@ namespace fabio_mf_dev_backend_2024.Migrations
 
                     b.HasIndex("VeiculoId");
 
-                    b.ToTable("Consumo");
+                    b.ToTable("Consumos");
                 });
 
             modelBuilder.Entity("fabio_mf_dev_backend_2024.Models.Veiculo", b =>
